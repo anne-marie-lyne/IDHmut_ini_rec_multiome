@@ -10,6 +10,9 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=anne-marie.lyne@curie.fr
 
+#script to launch DAR analysis to compare untreated grade 4 astrocytoma to
+# grade 2/3 untreated astrocytoma
+
 source /mnt/beegfs/common/apps/miniforge/25.3.1/etc/profile.d/conda.sh
 conda activate /mnt/beegfs/home/alyne/persistent/archr_env
 # module load R

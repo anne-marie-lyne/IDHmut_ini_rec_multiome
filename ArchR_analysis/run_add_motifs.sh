@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=diff_peak_PCV_oligo
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=6
 #SBATCH --mem=300gb
 #SBATCH --time=48:00:00
 #SBATCH --partition=dev

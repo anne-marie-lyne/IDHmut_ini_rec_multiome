@@ -137,6 +137,12 @@ oligo$cell.type.sr.cl.imm.postmerge[which(oligo$cell.type.sr.cl.imm.postmerge=="
 
 
 fwrite(as.data.frame(oligo$cell.type.sr.cl.imm.postmerge),
+       paste0(fig.dir,"/cell_types_oligo_postmerge_separate.tsv.gz"), row.names = T)
+fwrite(as.data.frame(astro$cell.type.sr.cl.imm.postmerge),
+       paste0(fig.dir,"/cell_types_astro_postmerge_separate.tsv.gz"), row.names = T)
+
+
+fwrite(as.data.frame(oligo$cell.type.sr.cl.imm.postmerge),
        paste0(fig.dir,"/cell_types_oligo_postmerge.tsv.gz"), row.names = T)
 fwrite(as.data.frame(astro$cell.type.sr.cl.imm.postmerge),
        paste0(fig.dir,"/cell_types_astro_postmerge.tsv.gz"), row.names = T)

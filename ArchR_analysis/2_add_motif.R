@@ -86,6 +86,8 @@ heatmapPeaks <- markerHeatmap(
   transpose = TRUE
 )
 
+
+#heatmaps in Figure 4B
 plotPDF(heatmapPeaks, name = paste0("Peak-Marker-Heatmap-",cancer), width = 8, height = 6,addDOC = FALSE)
 
 

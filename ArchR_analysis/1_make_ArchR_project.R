@@ -195,11 +195,9 @@ oligo.ArchR$cell_type_match[which(oligo.ArchR$cell_type_match=="Macrophage")] = 
 oligo.ArchR$cell_type_match[which(oligo.ArchR$cell_type_match %in% c("astro-like","OPC-like","intermediate","neuro-like"))] = "Malignant"
 
 
-#plot UMAPs
+#plot UMAPs in Figure supp figure 4A
 p1 = plotEmbedding(ArchRProj = oligo.ArchR, colorBy = "cellColData", name = "Sample", embedding = "UMAPHarmony",labelMeans=F)
 p2 = plotEmbedding(ArchRProj = oligo.ArchR, colorBy = "cellColData", name = "Sample", embedding = "UMAP",labelMeans=F)
-p3 = plotEmbedding(ArchRProj = oligo.ArchR, colorBy = "cellColData", name = "cell_type", embedding = "UMAPHarmony",labelMeans=F)
-p4 = plotEmbedding(ArchRProj = oligo.ArchR, colorBy = "cellColData", name = "cell_type", embedding = "UMAP",labelMeans=F)
 p3 = plotEmbedding(ArchRProj = oligo.ArchR, colorBy = "cellColData", name = "cell_type_match", embedding = "UMAPHarmony",labelMeans=F, pal = col.pal)
 p4 = plotEmbedding(ArchRProj = oligo.ArchR, colorBy = "cellColData", name = "cell_type_match", embedding = "UMAP",labelMeans=F, pal = col.pal)
 plotPDF(p1,p2,p3,p4, name = paste0("Plot-UMAP2Harmony-Sample-Clusters_",cancer,".pdf"), 

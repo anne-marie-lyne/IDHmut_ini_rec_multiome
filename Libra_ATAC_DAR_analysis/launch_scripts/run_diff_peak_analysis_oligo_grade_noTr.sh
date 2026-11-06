@@ -10,6 +10,9 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=anne-marie.lyne@curie.fr
 
+
+#script to launch DAR analysis to compare grade 3 untreated IDH-O to untreated grade 2 IDH-O
+
 source /mnt/beegfs/common/apps/miniforge/25.3.1/etc/profile.d/conda.sh
 conda activate /mnt/beegfs/home/alyne/persistent/archr_env
 # module load R

@@ -10,6 +10,10 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=anne-marie.lyne@curie.fr
 
+#script to launch code to make figures
+#can also just directly use R script analyse_Libra_output.R
+#and set parameters in script
+
 source /mnt/beegfs/common/apps/miniforge/25.3.1/etc/profile.d/conda.sh
 conda activate /mnt/beegfs/home/alyne/persistent/archr_env
 # module load R
